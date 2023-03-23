@@ -37,4 +37,6 @@ app.post('/addStudent', function(req,res){
                               tipoSangre: req.body.tipoSangre});
               
 });
+//el app post, utiliza el metodo post de htpp y el metodo render para mandar a llamar la informacion que este en el archivo "displayData", 
+//en este caso solicita las keys nombre, edad, nss y tipoSangre con los valores que tengan en el body del archivo llamado.
 app.listen(port);
