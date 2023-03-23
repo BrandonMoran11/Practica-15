@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/style.css" type="text/css"/>
+        <title>Document</title>
+    </head>
+    <body> 
+        <h1>Agregar estudiante</h1>
+        <form action="/addStudent" method="POST"> <!--Se crea un formulario con la accion de agregar un estudiante de nuestro archivo server.js y con su respectivo método, en este caso POST.-->
+            <label for="nss">NSS:</label> <!--Se crea un label con el respectivo nombre del campo a llenar, este caso Numero de seguro social(NSS)-->
+                <input type="text" id="nss" name="nss"><br><br> <!--Se crea un input donde se ingresara la informacion del campo solicitado, en este caso es el NSS y se le asigna tipo de informacio texto y id del input como nss al igual que el nombre del input-->
+            <label for="nombre">Nombre:</label><!--Se crea un label con el respectivo nombre del campo a llenar, este caso Numero de seguro Nombre del estudiante-->
+                <input type="text" id="nombre" name="nombre"><br><br> <!--Se crea un input donde se ingresara la informacion del campo solicitado, en este caso es el nombre y se le asigana tipo de informacion texto y id del input como nombre, al igual que el nombre del input-->
+            <label for="edad">Edad:</label><!--Se crea un label con el respectivo nombre del campo a llenar, este caso la edad del estudiante)-->
+                <input type="text" id="edad" name="edad"><br><br><!--Se crea un input donde se ingresara la informacion del campo solicitado, en este caso es edad y se le asigana tipo de informacion texto y id del input como edad, al igual que el nombre del input-->
+            <label for="tipoSangre">Tipo de sangre:</label><!--Se crea un label con el respectivo nombre del campo a llenar, este caso tipo de sangre del estudiante-->
+                <input type="text" id="tipoSangre" name="tipoSangre"><br><br> <!--Se crea un input donde se ingresara la informacion del campo solicitado, en este caso es el tipo de sangre y se le asigana tipo de informacion texto y id del input como tipoSangre, al igual que el nombre del input-->
+                
+            <input type="submit" value="Submit"> <!--Crea un input que funcionara como un boton para poder guardar los datos, es por eso que se le asigna "submit" en el type-->
+        </form>
+    </body>
+</html>

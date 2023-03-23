@@ -1,0 +1,20 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css" type="text/css"/>
+    <title>Document</title>
+</head>
+<body> 
+    <h1>Estudiante <%= nombre%></h1>
+    <form action="/addstudent" method="POST"> <!--Se crea un formulario con la accion de agregar un estudiante de nuestro archivo server.js y con su respectivo método, en este caso POST.-->
+        <p>Nombre: <input type="text" id="nombre" value="<%=nombre%>" disabled></p>
+        <p>Edad: <input type="text" id="edad" value="<%=edad%>" disabled></p>
+        <p>NSS: <input type="text" id="nss" value="<%=nss%>" disabled></p>
+        <p>Tipo de sangre: <input type="text" id="tipoSangre" value="<%=tipoSangre%>" disabled></p>
+
+     
+    </form>
+
+</body>
+</html>
